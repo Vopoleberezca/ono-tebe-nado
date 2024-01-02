@@ -1,90 +1,40 @@
 .header {
-  display: grid;
-  grid-template-columns: 454px 148px auto;
-  grid-template-rows: 105px;
-  grid-gap: 7px;
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  align-items: start;
   width: 1052px;
-  margin: 0 auto;
-}
-
-.header_logo_image {
-	width: 148px;
-    height: 105px;
-}
-
-.header_menu {
-	color: #000;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	letter-spacing: 0.18px;
+  height: 105px;
+  padding: 92px 39px;
+  color: #000;
 }
 
 .header_menu_list {
-  color: #000;
+  display: flex;
+  list-style: none;
+  }
+
+.header_logo_image {   
+  display: block; 
+  width: 148px;
+  height: 105px;
+  flex-grow: 0;
+}
+
+
+}
+
+.header_menu_link {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.18px;
 }
 
-.header_menu_link {
-  color: #f5f5f5;
-  text-decoration: underline;
-  font-size: 16px;
-  line-height: 120%;
+.header_menu_active .header_menu_link {
+  text-decoration: none;
 }
 
 
 
- .grid-container {
-            display: grid;
-            grid-template-columns: 454px 148px auto;
-            grid-template-rows: 105px;
-            grid-gap: 7px;
-            width: 1052px;
-            margin: 92px 24px;
-        }
 
-.grid-logo {
-	plece-content: center;
-}
-
-        .cell {
-            padding: 15px;
-            border: 1px solid #ccc;
-        }
-
-        .cell:nth-child(1) {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .cell:nth-child(1) a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        .cell:nth-child(1) img {
-            width: 7px;
-            height: 7px;
-        }
-
-        .cell:nth-child(2) img {
-            width: 148px;
-            height: 105px;
-        }
-
-        .cell:nth-child(3) {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .contact-info {
-            text-decoration: underline;
-        }
-        }
