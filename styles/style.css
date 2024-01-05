@@ -55,9 +55,9 @@
   width: 239px;
 }
 
-.address__link {
-  letter-spacing: 0.18px;
+.contact-link {
   text-decoration: underline;
+  letter-spacing: 0.18px;
 }
 
 .cover {
