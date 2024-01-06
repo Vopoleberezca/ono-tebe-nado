@@ -113,9 +113,7 @@
   letter-spacing: 60px;
 }
 
-/*.letter-spacing-2_6 {
-  letter-spacing: 2.6px;
-}
+/*
 
 .letter-spacing-0_4 {
   letter-spacing: 0.4px;
@@ -147,7 +145,12 @@
   color: white;
 }
 
-.description-text-extended {
+.description-text-extended-1 {
+  word-spacing: 18px;
+  letter-spacing: -0.4px;
+  }
+
+.description-text-extended-2 {
   word-spacing: 18px;
   letter-spacing: -0.1px;
   }
@@ -175,73 +178,86 @@
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-left: 40px;
   margin-bottom: 27px;
+  margin-left: 40px;
+  line-height: 47px;
 }
 
 .lots__card-list {
-  list-style: none;
   display: flex;
-  gap: 25px;
+  list-style: none;
+  flex-wrap: wrap;
   align-items: stretch;
+  gap: 25px;
   margin-bottom: 30px;
 }
 
 .lots__card-list-item {
+  position: relative;
+  min-height: 450px;
   flex-grow: 1;
 }
 
 .card-link {
-  text-decoration: none;
   display: block;
+  text-decoration: none;
   height: 100%;
-}
-
-.card_type_film {
-  background: url(../images/card-lot-01.jpg) no-repeat;
-}
-
-.card_type_book {
-  background: url(../images/card-lot-02.jpg) no-repeat;
-}
-
-.card_type_picture {
-  background: url(../images/card-lot-03.jpg) no-repeat;
 }
 
 .card {
-  padding: 50px 40px 48px;
-  color: #fff;
-  position: relative;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
   justify-content: space-between;
   background-size: cover;
   background-position: center;
+  height: 100%;
+  color: #fff;
+  padding: 50px 40px 47px;
+}
+
+.card_type_film {
+  background: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+}
+
+.card_type_book {
+  background: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+}
+
+.card_type_picture {
+  background: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
 }
 
 .card__title {
-  line-height: 120%;
-  font-weight: 700;
-  font-size: 22px;
-  text-decoration-line: underline;
-  text-decoration-thickness: 1px;
-  text-transform: uppercase;
-  max-width: 254px;
   position: relative;
+  max-width: 254px;
+  line-height: 26.4px;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px; 
+  text-underline-offset: 3px; 
 }
 
 .card__text {
-  font-size: 20px;
-  line-height: 120%;
-  max-width: 254px;
   position: relative;
+  max-width: 254px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .lots__look-more-link {
   font-size: 20px;
   margin-left: 40px;
+  text-underline-offset: 3px;
+}
+
+.three_dots {
+  letter-spacing: 2.6px;
 }
 
 .about {
