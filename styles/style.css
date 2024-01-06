@@ -66,7 +66,7 @@
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 165px 50px 51px;
+  padding: 163px 50px 51px;
   color: #fff;
 }
 
@@ -77,8 +77,8 @@
   background-color: black;
   opacity: 0.5;
   z-index: 1;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
 }
 
 .cover__title {
@@ -99,21 +99,21 @@
   margin-bottom: 20px; 
 }
 
-.text-center {
+.aligned-text-center {
   text-align: center;
   line-height: 100%;
 }
 
-.text-right {
+.aligned-text-right {
   text-align: right;
   line-height: 100%;
 }
 
-.letter-spacing-60 {
+.letter-spacing-extended {
   letter-spacing: 60px;
 }
 
-.letter-spacing-2_6 {
+/*.letter-spacing-2_6 {
   letter-spacing: 2.6px;
 }
 
@@ -123,45 +123,48 @@
 
 .letter-spacing-0_1 {
   letter-spacing: 0.1px;
+}*/
+
+.no-letter-spacing {
+  letter-spacing: 0px;
 }
 
-.letter-spacing--0_1 {
-  letter-spacing: -0.1px;
-}
-
-.letter-spacing--0_3 {
-  letter-spacing: -0.3px;
-}
-
-.letter-spacing-0 {
-  letter-spacing: initial;
-}
-
-.cover__cta {
-  font-size: 22px;
+.cover__description {
   display: flex;
+  position: relative;
   text-transform: uppercase;
   justify-content: space-between;
   align-items: center;
-  line-height: 127.273%;
-  padding: 0;
-  position: relative;
-  padding-left: 28px;
+  padding: 0px 0px 0px 28px;
 }
 
-.cover__cta-title {
-  word-spacing: 19px;
-}
-
-.cover__cta-button {
+.cover__description-text {
+  font-style: normal;
+  font-weight: 400;
   font-size: 22px;
-  cursor: pointer;
-  border: 1px solid currentColor;
-  background: transparent;
-  padding: 12px 32px;
-  color: #fff;
-  text-transform: uppercase;
+  line-height: 127%;
+  word-spacing: 19px;
+  color: white;
+}
+
+.description-text-extended {
+  word-spacing: 18px;
+  letter-spacing: -0.1px;
+  }
+
+.bet-button {
+  font-style: normal;
   font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 26px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  padding: 12px 32px;
+  cursor: pointer;
 }
 
 .lots {
