@@ -96,11 +96,7 @@
 .aligned-text {
   display: block;
   margin-bottom: 20px;
-}
-
-.aligned-text:last-child {
-  margin-bottom: 0px;
-}
+}  
 
 .aligned-text-center {
   text-align: center;
@@ -110,6 +106,10 @@
 .aligned-text-right {
   text-align: right;
   line-height: 100%;
+}
+
+.aligned-text:last-child {
+  margin-bottom: 0px;
 }
 
 .letter-spacing-extended {
