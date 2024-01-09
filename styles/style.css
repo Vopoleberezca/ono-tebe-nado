@@ -96,12 +96,8 @@
 .aligned-text {
   display: block;
   margin-bottom: 20px;
-}  
-
-.aligned-text:last-child {
-  margin-bottom: 0px;
 }
-
+  
 .aligned-text-center {
   text-align: center;
   line-height: 100%;
