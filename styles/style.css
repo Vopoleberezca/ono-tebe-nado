@@ -74,8 +74,8 @@
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.5;
-  z-index: 1;
+  opacity: 0.6;
+  z-index: -1;
   top: 0%;
   left: 0%;
 }
@@ -90,12 +90,16 @@
   letter-spacing: 30px;
   margin-bottom: 135px;
   color: white;
-  z-index: 2;
+  z-index: 1;
 }
 
 .aligned-text {
   display: block;
   margin-bottom: 20px;
+}
+
+.aligned-text:last-child {
+    margin-bottom: 0;
 }
 
 .aligned-text-center {
@@ -134,17 +138,18 @@
   color: white;
 }
 
-.description-text-extended-1 {
+.description-text-extended-big {
   word-spacing: 18px;
   letter-spacing: -0.4px;
   }
 
-.description-text-extended-2 {
+.description-text-extended-small {
   word-spacing: 18px;
   letter-spacing: -0.1px;
   }
 
 .bet-button {
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -152,7 +157,7 @@
   line-height: 26px;
   border-width: 1px;
   border-style: solid;
-  border-color: white;
+  border-color: currentColor;
   background-color: transparent;
   color: white;
   padding: 12px 32px;
@@ -197,6 +202,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  background-repeat: no-repeat;
   justify-content: space-between;
   background-size: cover;
   background-position: center;
@@ -206,18 +212,15 @@
 }
 
 .card_type_film {
-  background: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card__title {
@@ -283,14 +286,14 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.2px;
 }
-
+/*
 .letter-spacing-0-4 {
   letter-spacing: 0.4px;
 }
@@ -310,6 +313,7 @@
 .letter-spacing-0--3 {
   letter-spacing: -0.3px;
 }
+*/
 
 .footer {
   display: flex;
@@ -325,6 +329,8 @@
 
 .footer__menu-list {
   text-align: center;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .footer__menu-list-item {
@@ -339,7 +345,7 @@
   text-decoration: none;
 }
 
-.underline {
+.line {
   text-decoration: none;
   border-bottom: 1px solid currentColor;
 }
