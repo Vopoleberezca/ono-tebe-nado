@@ -67,6 +67,7 @@
   background-repeat: no-repeat;
   padding: 163px 50px 51px;
   color: #fff;
+  z-index: 0;
 }
 
 .overlay {
@@ -90,7 +91,7 @@
   letter-spacing: 30px;
   margin-bottom: 135px;
   color: white;
-  z-index: -1;
+  z-index: 2;
 }
 
 .aligned-text {
@@ -127,6 +128,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 0px 0px 28px;
+  z-index: 2;
 }
 
 .cover__description-text {
@@ -233,6 +235,7 @@
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+  z-index: 2;
 }
 
 .card__text {
@@ -240,6 +243,7 @@
   max-width: 254px;
   font-size: 20px;
   line-height: 24px;
+  z-index: 2;
 }
 
 .lots__look-more-link {
